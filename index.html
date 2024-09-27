@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0ebf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.qr-code {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 260px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="images/image-qr-code.png" alt="QR Code" class="qr-code">
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Yuvanesh</a>.
+    </div>
+</div>
+</body>
+</html>
